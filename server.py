@@ -1,10 +1,13 @@
 from flask import Flask, render_template, request
+import datetime
 app = Flask(__name__)
+today=datetime.datetime.now()
+year=today.year()
 
 
 @app.route("/", methods=["GET", "POST"])
 def main_page():
-    return render_template("index.html")
+    return render_template("index.html", year=year)
 
 @app.route("/engineeringresume")
 def engineering_resume_page():
