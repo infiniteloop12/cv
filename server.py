@@ -17,7 +17,7 @@ def coding_resume_page():
 @app.route("/thanks")
 def thanks_page():
     print("thanks!")
-    return render_template("thanks.html.html")
+    return render_template("thanks.html")
 
 
 if __name__ == "__main__":
