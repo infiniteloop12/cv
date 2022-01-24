@@ -2,7 +2,8 @@ from flask import Flask, render_template, request
 import datetime
 app = Flask(__name__)
 today=datetime.datetime.now()
-year=today.year()
+year= today.year
+print(year)
 
 
 @app.route("/", methods=["GET", "POST"])
