@@ -7,6 +7,7 @@ this_year= today.year
 
 @app.route("/", methods=["GET", "POST"])
 def main_page():
+    print(this_year)
     return render_template("index.html", year=this_year)
 
 @app.route("/engineeringresume")
