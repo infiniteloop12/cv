@@ -2,13 +2,12 @@ from flask import Flask, render_template, request
 import datetime
 app = Flask(__name__)
 today=datetime.datetime.now()
-year= today.year
-print(year)
+this_year= today.year
 
 
 @app.route("/", methods=["GET", "POST"])
 def main_page():
-    return render_template("index.html", year=year)
+    return render_template("index.html", year=this_year)
 
 @app.route("/engineeringresume")
 def engineering_resume_page():
