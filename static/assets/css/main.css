@@ -3899,3 +3899,7 @@ input, select, textarea {
 .nav-link{
     font-size: 1.2rem;
 }
+
+p.description{
+    margin-left: 1.25rem;
+}
