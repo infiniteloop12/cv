@@ -14,7 +14,7 @@ def main_page():
 def engineering_resume_page():
     return render_template("engineering_resume.html")
 
-@app.route("/codingresume")
+@app.route("/resume")
 def coding_resume_page():
     return render_template("coding_resume.html")
 
